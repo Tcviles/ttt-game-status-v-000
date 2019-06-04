@@ -13,3 +13,11 @@ def won?(board)
     end
   end
 end
+
+def full?(board)
+  if board.include?(" ") or board.include(nil)
+    return false
+  else
+    return true
+  end
+end

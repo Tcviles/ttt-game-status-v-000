@@ -28,7 +28,6 @@ def winner(board)
   if !won?(board)
     nil
   else
-    combo = won?(board)
-    return board[combo[1]]
+    board[won?(board)[1]]
   end
 end

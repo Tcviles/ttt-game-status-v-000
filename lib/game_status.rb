@@ -23,3 +23,12 @@ end
 def over?(board)
  (won?(board) or draw?(board)) ? true : false
 end
+
+def winner(board)
+  if !won?(board)
+    nil
+  else
+    combo = won?(board)
+    return board[combo[1]]
+  end
+end
